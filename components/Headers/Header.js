@@ -22,7 +22,7 @@ const Header = () => {
             className="text-xl font-medium font-poppins text-inherit	"
           >
             <Link href="/" >
-            Dosnine
+            @glowwithcam__
 
             </Link>
           </span>

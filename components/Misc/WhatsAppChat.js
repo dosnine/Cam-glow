@@ -19,7 +19,7 @@ export default function WhatsAppChat() {
           href="https://wa.me/message/5LXYP7EBAUHMD1"
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center justify-center w-14 h-14 sm:w-16 sm:h-16 bg-green-500 text-white rounded-full shadow-lg hover:bg-green-600 transition-all duration-300"
+          className="flex items-center justify-center w-14 h-14 sm:w-16 sm:h-16 bg-primary-color text-white rounded-full shadow-lg hover:bg-green-600 transition-all duration-300"
         >
           <MessageCircle className="w-7 h-7" />
         </a>

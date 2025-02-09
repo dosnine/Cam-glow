@@ -3,99 +3,71 @@ import styles from '../styles/PromoSection.module.css';
 import YouTubeVideo from '../Misc/YouTubeVideo';
 import PhoneNumber from './../Misc/PhoneNumber';
 import ImagePopup from './../Misc/ImagePopup';
-import { 
-  CheckCircle2, 
-} from 'lucide-react';
-
+import { Instagram, Facebook, Scissors, ShieldCheck, Smile } from 'lucide-react';
 
 const Hero = () => {
   return (
     <section className={styles.promoSection}>
       <div className={styles.imageWrapper}>
-        <ImagePopup src="./design.png" alt="themes" width={1135} height={1016} />
-        {/* <YouTubeVideo url="https://youtu.be/y5NUxNAveAQ" /> */}
-        {/* <PhoneNumber/> */}
 
+        <YouTubeVideo url="https://youtu.be/KouJncv9pbI?si=u3yFtFTYxHwUvkCc" />
       </div>
 
-
       <div className={styles.content}>
-        <h1 >Ready-to-Use Website
-        <span className='text-primary-color' > in days</span>! </h1>
-        <p className={styles.description}> Service-based business Template paired with 5+ workflow tools for common business needs. For only <strong>$178USD/1yr</strong>.   
-          <span className="text-base text-red-600">(Save $321)</span>
+        <h1>
+          Transform Your Style
+          <span className='text-primary-color'> with Expert Care</span>
+        </h1>
+        
+        <p className={styles.description}>
+          Professional hairstyling services by Camillia, experienced entrepreneur and certified hairdresser.
+          Open Mon-Sat 9AM-4PM. Book your perfect look today!
         </p>
-    
 
-         <div className="flex flex-col  justify-center items-center sm:flex-row gap-4 mt-2">
-  
+        <div className="flex flex-col justify-center items-center sm:flex-row gap-4 mt-2">
+          <div className="flex flex-col sm:flex-row gap-4 mt-2 w-full justify-center items-center">
+            <a 
+              href="/booking"
+              className="w-full sm:w-auto flex items-center justify-center gap-3 bg-primary-color text-white font-semibold py-4 px-8 rounded-xl transition-transform hover:scale-[1.02] active:scale-95 shadow-lg"
+            >
+              <Scissors className="w-5 h-5" />
+              Book Appointment
+            </a>
+            <a 
+              href="/hairstyles"
+              className="w-full sm:w-auto flex items-center justify-center gap-3 bg-secondary-color text-white font-semibold py-4 px-8 rounded-xl transition-transform hover:scale-[1.02] active:scale-95 shadow-lg"
+            >
+              View Hairstyles
+            </a>
+          </div>
+        </div>
 
-
-      {/* CTAs */}
-      <div className="flex flex-col sm:flex-row gap-4 mt-2 w-full justify-center items-center">
-      <a 
-    href="/register"
-    target="_blank" 
-    rel="noopener noreferrer"
-    className="w-full sm:w-auto box-shadow flex items-center justify-center gap-3 bg-black-600 text-black font-semibold py-4 px-8 rounded-xl transition-transform hover:scale-[1.02] active:scale-95 shadow-lg shadow-orange-200"
-  >
-   Get Started Now
-   </a>
-  <a 
-    href="https://dosnine.gumroad.com/l/yrccb?wanted=true"
-    target="_blank" 
-    rel="noopener noreferrer"
-    className="w-full sm:w-auto box-shadow flex items-center justify-center gap-3 bg-primary-color text-white font-semibold py-4 px-8 rounded-xl transition-transform hover:scale-[1.02] active:scale-95 shadow-lg shadow-orange-200"
-  >
-   Buy Now
-  </a>
-
-
-</div>
-
-
-
-
-
-
-
-
-  </div>
-          {/* Trust Indicators */}
-          <div className="mt-10 text-center">
+        {/* Trust Indicators */}
+        <div className="mt-10 text-center">
           <div className="flex flex-wrap justify-center items-center gap-6">
-            <div className="flex items-center text-inherit	">
-              <CheckCircle2 className="w-5 h-5 text-green-500 mr-2" />
-              <span>30-day money-back guarantee</span>
+            <div className="flex items-center">
+              <ShieldCheck className="w-5 h-5 text-primary-color mr-2" />
+              <span>Secure Booking & Payments</span>
             </div>
-            <div className="flex items-center text-inherit">
-              <CheckCircle2 className="w-5 h-5 text-green-500 mr-2" />
-              <span>24/7 Support</span>
-            </div>
-            <div className="flex items-center text-inherit">
-              <CheckCircle2 className="w-5 h-5 text-bold text-green-500 mr-2" />
-              <span>Free Updates</span>
+            <div className="flex items-center">
+              <Smile className="w-5 h-5 text-primary-color mr-2" />
+              <span>100% Satisfaction Guarantee</span>
             </div>
           </div>
-          </div>
+        </div>
 
-     
+        {/* Social Media Links */}
+        <div className="mt-8 flex justify-center gap-6">
+          <a href="INSTAGRAM_URL" target="_blank" rel="noopener noreferrer">
+            <Instagram className="w-8 h-8 text-primary-color hover:text-secondary-color transition-colors" />
+          </a>
+          <a href="FACEBOOK_URL" target="_blank" rel="noopener noreferrer">
+            <Facebook className="w-8 h-8 text-primary-color hover:text-secondary-color transition-colors" />
+          </a>
+        </div>
       </div>
     </section>
   );
 };
 
 export default Hero;
-
-
-
-     
-
-          
-
-
-
-   {/* Social Proof */}
-{/* <span className="text-gray-600 text-sm font-medium">
-Trusted by 1,238+ businesses worldwide
-</span> */}
